@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Netflixify</title>
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+
+    <!--vendor css-->
+    <link rel="stylesheet" href="dist/css/vendor.min.css">
+
+
+    <!--main styles -->
+    <link rel="stylesheet" href="dist/css/main.min.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!--Start Of Banner-->
+    <section id="show">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Netflix<span class="text-primary font-weight-bold">ify</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="form-inline">
+                        <ul class="navbar-nav mr-auto">
+                            <div class="input-group">
+                                <input type="text" class="form-control text-white bg-transparent border-0"
+                                    placeholder="Search For your Movie" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                                <div class="input-group-prepend">
+                                    <button class="text-primary btn btn-outline-white" id="basic-addon1"><i
+                                            class="fa fa-search" aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                        </ul>
+                    </form>
+                    <ul class="navbar-nav ml-auto">
+                        <a href="login.html" class="btn btn-primary mr-0 mb-2 mr-md-2 mb-md-0"
+                            style="width: 80px;">Login</a>
+                        <a href="register.html" class="btn btn-outline-light" style="width: 80px;">Register</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="movie"
+            style="background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('dist/images/iron-man-3-background-laptop-401021.jpg') center/cover no-repeat no-repeat;">
+            <div class="movie__bg">
+
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 d-flex justify-content-center align-items-center  " style="background: url('dist/images/ironman.jpg') center/cover; height: 70vh;">
+                        <span class="movie__play-icon d-flex justify-content-center align-items-center "><i class="fa fa-play text-white fa-2x" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="col-md-4 text-white">
+                        <h3 class="movie__name">Iron Man</h3>
+                        <div class="d-flex">
+                            <div class="d-flex  ">
+                                <i class="fa fa-star text-primary mr-2" aria-hidden="true"></i>
+                                <i class="fa fa-star text-primary mr-2" aria-hidden="true"></i>
+                                <i class="fa fa-star text-primary mr-2" aria-hidden="true"></i>
+                                <i class="fa fa-star text-primary mr-2" aria-hidden="true"></i>
+                                <i class="fa fa-star text-primary mr-2" aria-hidden="true"></i>
+                            </div>
+                            <span class="align-self-center" style="font-size: 13px;">5.0</span>
+                        </div>
+                        <p class="movie__description">After being held captive in an Afghan cave, billionaire
+                            engineer Tony Stark creates a unique weaponized suit of armor to fight evil.</p>
+                        <a href="" class="btn btn-primary text-capitalize"><span
+                            class="fa fa-heart"></span> add to favourite</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+    </section>
+    <!--End Of Banner-->
+
+    <!--Start Of Listing-->
+    <section class="listing py-2">
+        <div class="container">
+            <div class="row my-4">
+                <div class="col-12 d-flex justify-content-between">
+                    <h3 class="listing__title text-white">Related Movies</h3>
+                    <a href="" class="align-self-center text-capitalize text-primary">See All</a>
+                </div>
+            </div>
+            <div class="row movies owl-carousel owl-theme">
+                <div class="movie p-0">
+                    <img src="dist/images/intrestellar.jpg" class="img-fluid" alt="">
+                    <div class="movie__details text-white">
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-0 movie__name">Intrestellar</p>
+                            <p class="mb-0 movie__year align-self-center ">2019</p>
+                        </div>
+                        <div class="d-flex movie__rating">
+                            <div class="mr-2">
+                                <i class="fa fa-star text-primary mr-1" aria-hidden="true"></i>
+                                <i class="fa fa-star text-primary mr-1" aria-hidden="true"></i>
+                                <i class="fa fa-star text-primary mr-1" aria-hidden="true"></i>
+                                <i class="fa fa-star text-primary mr-1" aria-hidden="true"></i>
+                                <i class="fa fa-star text-primary mr-1" aria-hidden="true"></i>
+                            </div>
+                            <span class="text-white">5.0</span>
+                        </div>
+                        <div class="movie__views">
+                            <p class="text-white">View: 300</p>
+                        </div>
+                        <div class="d-flex movie__cta">
+                            <a class="btn btn-primary flex-fill mr-2" href=""><i class="fa fa-play"
+                                    aria-hidden="true"></i> Watch Now</a>
+                            <i class="fa fa-heart align-self-center movie__fav-button" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie p-0">
+                    <img src="dist/images/iron2008.jpg" class="img-fluid" alt="">
+                    <div class="movie__details text-white">
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-0 movie__name">Iron Man</p>
+                            <p class="mb-0 movie__year align-self-center ">2008</p>
+                        </div>
+                        <div class="d-flex movie__rating">
+                            <div class="mr-2">
+                                <i class="fa fa-star text-primary mr-1" aria-hidden="true"></i>
+                                <i class="fa fa-star text-primary mr-1" aria-hidden="true"></i>
+                                <i class="fa fa-star text-primary mr-1" aria-hidden="true"></i>
+                                <i class="fa fa-star text-primary mr-1" aria-hidden="true"></i>
+                                <i class="fa fa-star text-primary mr-1" aria-hidden="true"></i>
+                            </div>
+                            <span class="text-white">5.0</span>
+                        </div>
+                        <div class="movie__views">
+                            <p class="text-white">View: 250</p>
+                        </div>
+                        <div class="d-flex movie__cta">
+                            <a class="btn btn-primary flex-fill mr-2" href=""><i class="fa fa-play"
+                                    aria-hidden="true"></i> Watch Now</a>
+                            <i class="fa fa-heart align-self-center movie__fav-button" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie p-0">
+                    <img src="dist/images/iron2008.jpg" class="img-fluid" alt="">
+                    <div class="movie__details text-white">
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-0 movie__name">Iron Man</p>
+                            <p class="mb-0 movie__year align-self-center ">2008</p>
+                        </div>
+                        <div class="d-flex movie__rating">
+                            <div class="mr-2">
+                                <i class="fa fa-star text-primary mr-1" aria-hidden="true"></i>
+                                <i class="fa fa-star text-primary mr-1" aria-hidden="true"></i>
+                                <i class="fa fa-star text-primary mr-1" aria-hidden="true"></i>
+                                <i class="fa fa-star text-primary mr-1" aria-hidden="true"></i>
+                                <i class="fa fa-star text-primary mr-1" aria-hidden="true"></i>
+                            </div>
+                            <span class="text-white">5.0</span>
+                        </div>
+                        <div class="movie__views">
+                            <p class="text-white">View: 250</p>
+                        </div>
+                        <div class="d-flex movie__cta">
+                            <a class="btn btn-primary flex-fill mr-2" href=""><i class="fa fa-play"
+                                    aria-hidden="true"></i> Watch Now</a>
+                            <i class="fa fa-heart align-self-center movie__fav-button" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie p-0">
+                    <img src="dist/images/iron2008.jpg" class="img-fluid" alt="">
+                    <div class="movie__details text-white">
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-0 movie__name">Iron Man</p>
+                            <p class="mb-0 movie__year align-self-center ">2008</p>
+                        </div>
+                        <div class="d-flex movie__rating">
+                            <div class="mr-2">
+                                <i class="fa fa-star text-primary mr-1" aria-hidden="true"></i>
+                                <i class="fa fa-star text-primary mr-1" aria-hidden="true"></i>
+                                <i class="fa fa-star text-primary mr-1" aria-hidden="true"></i>
+                                <i class="fa fa-star text-primary mr-1" aria-hidden="true"></i>
+                                <i class="fa fa-star text-primary mr-1" aria-hidden="true"></i>
+                            </div>
+                            <span class="text-white">5.0</span>
+                        </div>
+                        <div class="movie__views">
+                            <p class="text-white">View: 250</p>
+                        </div>
+                        <div class="d-flex movie__cta">
+                            <a class="btn btn-primary flex-fill mr-2" href=""><i class="fa fa-play"
+                                    aria-hidden="true"></i> Watch Now</a>
+                            <i class="fa fa-heart align-self-center movie__fav-button" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Of Listing-->
+
+    <!--Start Of Footer-->
+    <footer id="footer" class=" py-3 bg-primary text-center text-white">
+        <p class="text-capitalize mb-0">&copy; all copy reserved to netflixify 2019</p>
+        <div class="social__icons mt-1">
+            <a href=""><i class="fa fa-facebook-square text-white mr-2 fa-2x" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-youtube-square text-white mr-2 fa-2x" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter-square text-white mr-2 fa-2x" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram text-white mr-2 fa-2x" aria-hidden="true"></i></a>
+        </div>
+    </footer>
+    <!--End Of Footer-->
+
+
+    <!--jquery-->
+    <script src="dist/js/jquery-3.4.0.min.js"></script>
+
+    <!--bootstrap-->
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/popper.min.js"></script>
+
+    <!--vendor js-->
+    <script src="dist/js/vendor.min.js"></script>
+
+    <!--main scripts-->
+    <script src="dist/js/main.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".listing .movies").owlCarousel({
+                loop: true,
+                nav: false,
+                stagePadding: 50,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    900: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                },
+                dots: false,
+                margin: 15,
+            });
+        });
+    </script>
+</body>
+
+</html>

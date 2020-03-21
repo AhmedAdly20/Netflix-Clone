@@ -1,0 +1,34 @@
+#show{ 
+    .movie{
+        padding: 8% 0;
+        background: $black;
+        min-height: 100vh;
+        position: relative;
+        .movie__bg{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            filter: blur(1px);
+        }
+        .movie__play-icon{
+            width: 80px;
+            height: 80px;
+            background: $primary;
+            border-radius: 50%;
+            i{
+                cursor: pointer;
+            }
+        }
+        .movie__name{
+            font-size: 3rem;
+            font-weight: 500;
+        }
+        .movie__description{
+            font-weight: 300;
+            line-height: 1.7;
+            margin-top: 0.81rem;
+        }
+    }
+}

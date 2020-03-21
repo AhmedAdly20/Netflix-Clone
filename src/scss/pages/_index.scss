@@ -1,0 +1,67 @@
+#banner {
+    .movie {
+        min-height: 100vh;
+        position: relative;
+        background-color: $black;
+        @media (max-width:768px){
+            padding-top: 100px;
+        }
+        .movie__bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            filter: blur(1px);
+        }
+        .movie__name{
+            font-size: 4rem;
+        }
+        .movie__rating .fa-star{
+            font-size: 1rem;
+        }
+        .movie__description{
+            font-size: 1.2rem;
+            line-height: 1.4;
+            font-weight: 300;
+        }
+    }
+}
+.listing{
+    .movie{
+        img{
+            transition: all 0.3s ease-in;
+        }
+        background: $black;
+        position: relative;
+        transition: all 0.3s ease-in;
+        &:hover img{
+            opacity: 0.5;
+        }
+        &:hover .movie__details{
+            opacity: 1;
+        }
+        .movie__details{
+            position: absolute;
+            left: 10px;
+            right: 10px;
+            bottom: 1rem;
+            opacity: 0;
+            transition: all 0.3s ease-in;
+        }
+        .movie__name{
+            font-size: 1.50rem;
+        }
+        .movie__rating{
+            .fa-star{
+                font-size: 1rem;
+            }
+        }
+        .movie__fav-button{
+            font-size: 1.5rem;
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+}
